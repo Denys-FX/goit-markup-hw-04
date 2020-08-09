@@ -13,6 +13,8 @@
     --background-color-footer: #2F303A;
     --link-color-inactive: #AFB1B8;
     --link-color-active: #2196F3;
+    --nav-underline: #ECECEC;
+    --cards-line: #EEEEEE;
 }
 
 /*Page main (body) font and color styling*/
@@ -65,21 +67,21 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .header-container {
-    border-bottom: 1px solid #ECECEC;
-}
+    max-width: 1600px;
 
-.nav-container{
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
+.container.underline {
+    border-bottom: 1px solid var(--nav-underline);
+}
 
 .nav-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .site-logo.main .logo-part1 {
@@ -121,7 +123,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .site-contacts {
     display: flex;
-    margin-left: auto;
+    margin-left: 305px;
 }
 
 .site-contacts .link {
@@ -141,21 +143,24 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 /*Section "Hero" styling*/
-.hero-container {
+.hero {
     background-color: var(--background-color-transparent1);
 }
 
-.hero-section {
+.hero-container {
     max-width: 1600px;
     height: 600px;
-    padding-top: 200px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-right: 15px;
+    padding-left: 15px;
     
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header-opt.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    
+    background-color: var(--background-color-transparent);
     text-align: center;
 }
 
@@ -188,15 +193,21 @@ h1,h2,h3,h4,h5,h6 {
 
 /*Section "Advantages" styling*/
 .advantages-container {
-    padding-top: 94px;
+    max-width: 1600px;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .advantages-section {
-    width: 1200px;
+    padding-top: 94px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left:auto;
     margin-right: auto;
+}
+.advantages-list {
+    display: flex;
+    justify-content: center;
 }
 
 .advantages-item {
@@ -204,9 +215,8 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
 }
 
-.advantages-list {
-    display: flex;
-    justify-content: space-between;
+.advantages-list .advantages-item + .advantages-item {
+    margin-left: 30px
 }
 
 .advantages-image {
@@ -244,12 +254,14 @@ h1,h2,h3,h4,h5,h6 {
 
 /*Section "Our Ptojects"*/
 .projects-container {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    max-width: 1600px;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .projects-section {
-    width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left:auto;
@@ -265,7 +277,11 @@ h1,h2,h3,h4,h5,h6 {
 
 .projects-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.projects-list .project-item + .project-item {
+    margin-left: 30px;
 }
 
 .project-image {
@@ -308,18 +324,21 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*Section "Team" styling*/
-.team-container {
+.team {
     background-color: var(--background-color-secondary);
 }
 
+.team-container {
+    max-width: 1600px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
 .team-section {
-    width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left:auto;
-    margin-right: auto;
 }
 
 .team-list {
@@ -328,8 +347,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .team-item {
-    text-align: center;
     padding-bottom: 24px;
+
+    text-align: center;
+    background-color: var(--background-color-main);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-list .team-item + .team-item {
     margin-left: 30px;
@@ -391,12 +413,15 @@ h1,h2,h3,h4,h5,h6 {
 /*Section "Clients" styling*/
 
 .clients-container {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .clients {
-    width: 1200px;
+
+    padding-top: 94px;
+    padding-bottom: 94px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -405,7 +430,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .company-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .company-item {
@@ -418,8 +443,8 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 4px; 
 }
 
-.company-list.company-item + .company-item {
-    padding-left: 30px;
+.company-item + .company-item {
+    margin-left: 30px;
 }
 
 .company-list .link {
@@ -427,7 +452,7 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
 
     border-radius: 4px;
-    color: var(--link-color-inactive); 
+    color: var(--link-color-inactive);
 }
 
 .company-list .link:hover,
@@ -436,19 +461,22 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*Footer styling*/
-.container-footer {
+.footer {
     background-color: var(--background-color-footer);
 }
 
-.section-footer {
-    display: flex;
-    justify-content: space-between;
-    
-    width: 1600px;
-    padding-left: 215px;
-    padding-right: 215px;
+.footer-container {
+    max-width: 1600px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: center;
+    
 }
 /*Logo + Address block*/
 .section-address {
@@ -535,7 +563,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /*Sign-up block*/
 .section-signup {
-    width: 570px;
+    max-width: 570px;
     padding-top: 72px;
     padding-bottom: 94px;
     margin-left: 94px;
@@ -576,17 +604,24 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*Portfolio page styling*/
-/*Portfolio sort butons section*/
-.portfolio-sort {
-    width: 1200px;
-    padding-top: 94px;
+/*Portfolio navigation*/
+
+.portfolio-nav {
+    max-width: 1600px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
 
-.portfolio-nav {
+.portfolio-sort {
+   
+    padding-top: 94px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.portfolio-nav-list {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
@@ -624,20 +659,23 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*Portfolio items container*/
-.portfolio-container {
-    display:   flex;
-    
-    width: 1200px;
+.portfolio {
+    display: flex;
+    max-width: 1600px;
     padding-right: 15px;
     padding-left: 15px;
-    padding-bottom: 94px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.portfolio-container { 
+    padding-bottom: 94px;
 }
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .portfolio-item {
@@ -645,6 +683,8 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 30px;
     margin-bottom: 30px;
     margin-right: 30px;
+
+    border: 1px solid var(--cards-line);
 }
 
 /*к каждому 3му ел-ту*/
@@ -662,7 +702,7 @@ margin-right: 30px;
 formula
 calc((100% - (N of margin in row)*margin) / N of elements in row */
 
-.portfoli0-image {
+.portfolio-image {
     display: block;
 }
 
