@@ -125,6 +125,14 @@ h1,h2,h3,h4,h5,h6 {
     margin-left: 305px;
 }
 
+.site-contacts .item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
 .site-contacts .link {
     color: var(--text-color-secondary);
     font-weight: 500;
@@ -142,25 +150,24 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .site-contacts .item::before {
-    display: inline-block;
+    display:inline-block;
     content:"";
     margin-right: 10px;
-    
+      
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
 .site-contacts .mail::before {
-    background-image: url(../images/mail-pic.svg);
-    background-position: bottom;
+    background-image: url(../images/icon-mail.svg);
+    padding-top: 10px;
     width: 16px;
     height: 16px;
 }
 
 .site-contacts .tel::before {
-    background-image: url(../images/phone-pic.svg);
-    background-position: bottom;
+    background-image: url(../images/icon-tel.svg);
     width: 10px;
     height: 16px;
 }
@@ -634,10 +641,11 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 .sign-container .button {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     min-width: 200px;
     height: 50px;
-    padding: 10px 29px;
     margin-left: 12px;
 
     border: 1px solid transparent;
@@ -663,6 +671,20 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--text-color-footer);
     border: 1px solid var(--text-color-footer);
     border-radius: 4px;
+}
+
+.sign-container .button::after {
+    display: inline-flex;
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+
+    background-image: url(../images/icon-send.svg);
+    background-position: center;
+    background-size: contain;
+
+
 }
 
 /*Portfolio page styling*/
