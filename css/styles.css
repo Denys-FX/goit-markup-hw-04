@@ -517,13 +517,12 @@ h1,h2,h3,h4,h5,h6 {
 .company-list .link {
     display: flex;
     align-items: center;
-
-    border-radius: 4px;
-    color: var(--link-color-inactive);
+    
+   
 }
 
-.company-list .link:hover,
-.company-list .link:focus {
+.company-item .logo:hover,
+.company-item .logo:focus {
     color: var(--link-color-active);
 }
 
