@@ -52,14 +52,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.site-contacts .link:hover,
+.site-contacts .link:focus {
     color: var( --text-color-accent);
 }
 
-.site-contacts .link:hover,
-.site-contacts .link:focus {
-    color:var( --text-color-accent);
-}
 /*Navbar (header)styling */
 
 .container {
@@ -122,7 +120,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .site-contacts {
-    display: flex;
+    display: inline-flex;
+    align-items: center;
     margin-left: 305px;
 }
 
@@ -140,11 +139,36 @@ h1,h2,h3,h4,h5,h6 {
 
 .site-contacts .item .link + .link {
     padding-left: 10px;
-
 }
+
+.site-contacts .item::before {
+    display: inline-block;
+    content:"";
+    margin-right: 10px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.site-contacts .mail::before {
+    background-image: url(../images/mail-pic.svg);
+    background-position: bottom;
+    width: 16px;
+    height: 16px;
+}
+
+.site-contacts .tel::before {
+    background-image: url(../images/phone-pic.svg);
+    background-position: bottom;
+    width: 10px;
+    height: 16px;
+}
+
+
 /*Section "Hero" styling*/
 .hero {
-    background-color: var(--background-color-transparent1);
+    background: var(--background-color-transparent1);
 }
 
 .hero-container {
@@ -219,8 +243,36 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
 }
 
+.advantages-item::before {
+    display: block;
+    content:"";
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--background-color-secondary);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advantages-item.icon-antenna::before {
+    background-image: url(../images/advan-antenna1.png);
+}
+
+.advantages-item.icon-clock::before {
+    background-image: url(../images/advan-clock1.png);
+}
+
+.advantages-item.icon-diagram::before {
+    background-image: url(../images/advan-diagram1.png);
+}
+
+.advantages-item.icon-astro::before {
+    background-image: url(../images/advan-astronaut1.png);
+}
+
+
 .advantages-list .advantages-item + .advantages-item {
-    margin-left: 30px
+    margin-left: 30px;
+   
 }
 
 .advantages-image {
