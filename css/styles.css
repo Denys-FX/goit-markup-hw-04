@@ -152,16 +152,6 @@ h1,h2,h3,h4,h5,h6 {
     margin-right: 10px;
 }
 
-.button-icon.mail {
-    width: 16px;
-    height: 11.2px;
-}
-
-.button-icon.tel {
-    width: 10px;
-    height: 14.94px;
-}
-
 .button-icon:hover,
 .button-icon:focus {
     fill: var(--text-color-accent);
@@ -440,10 +430,7 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     width: 44px;
     height: 44px;
-    padding-left: auto;
-    padding-right: auto;
-    border: 1px solid var(--background-color-main);
-    border-radius: 25px;
+    border-radius: 22px;
 
     font-weight: 500;
     color: var(--link-color-inactive);
@@ -512,35 +499,24 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .logo2 {
-    width: 40px;
-    height: 42px;
     padding: 24px 65px;
 }
 
 .logo3 {
-    width: 41px;
-    height: 42.6px;
     padding: 24px 65px;
 }
 
 .logo4 {
-    width: 79.66px;
-    height: 42.02px;
     padding: 24px 45px;
 }
 
 .logo5 {
-    width: 59px;
-    height: 47px;
     padding: 21px 55px;
 }
 
 .logo6 {
-    width: 88.48px;
-    height: 45.44px;
     padding: 22px 40px;
 }
-
 
 .company-logo:hover,
 .company-logo:focus,
@@ -640,6 +616,16 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+.social-button {
+    fill: var(--text-color-accent2);
+}
+
+.social-link-footer {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.social-link-footer:hover {
+    background-color: var(--background-color-accent)
 }
 
 /*Sign-up block*/
