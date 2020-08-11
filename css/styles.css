@@ -167,33 +167,6 @@ h1,h2,h3,h4,h5,h6 {
     fill: var(--text-color-accent);
 }
 
-
-/*before pseudo-classes
-
-.site-contacts .item::before {
-    display:inline-block;
-    content:"";
-    margin-right: 10px;
-      
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-
-.site-contacts .mail::before {
-    background-image: url(../images/icon-mail.svg);
-    padding-top: 10px;
-    width: 16px;
-    height: 16px;
-}
-
-.site-contacts .tel::before {
-    background-image: url(../images/icon-tel.svg);
-    width: 10px;
-    height: 16px;
-}*/
-
-
 /*Section "Hero" styling*/
 .hero {
     background: var(--background-color-transparent1);
@@ -525,13 +498,56 @@ h1,h2,h3,h4,h5,h6 {
 .company-list .link {
     display: flex;
     align-items: center;
-    
-   
 }
 
-.company-item .logo:hover,
-.company-item .logo:focus {
-    color: var(--link-color-active);
+.company-logo {
+    box-sizing: content-box;
+    fill: var(--link-color-inactive); 
+}
+
+.logo1 {
+    width: 44.27px;
+    height: 49.23px;
+    padding: 20px 63px;
+}
+
+.logo2 {
+    width: 40px;
+    height: 42px;
+    padding: 24px 65px;
+}
+
+.logo3 {
+    width: 41px;
+    height: 42.6px;
+    padding: 24px 65px;
+}
+
+.logo4 {
+    width: 79.66px;
+    height: 42.02px;
+    padding: 24px 45px;
+}
+
+.logo5 {
+    width: 59px;
+    height: 47px;
+    padding: 21px 55px;
+}
+
+.logo6 {
+    width: 88.48px;
+    height: 45.44px;
+    padding: 22px 40px;
+}
+
+
+.company-logo:hover,
+.company-logo:focus,
+.company-item:hover, 
+.company-item:hover {
+    fill: var(--link-color-active);
+    border-color: var(--link-color-active);
 }
 
 /*Footer styling*/
