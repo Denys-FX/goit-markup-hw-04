@@ -129,8 +129,6 @@ h1,h2,h3,h4,h5,h6 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    
-
 }
 
 .site-contacts .link {
@@ -148,6 +146,29 @@ h1,h2,h3,h4,h5,h6 {
 .site-contacts .item .link + .link {
     padding-left: 10px;
 }
+
+.button-icon {
+    fill: var(--text-color-secondary);
+    margin-right: 10px;
+}
+
+.button-icon.mail {
+    width: 16px;
+    height: 11.2px;
+}
+
+.button-icon.tel {
+    width: 10px;
+    height: 14.94px;
+}
+
+.button-icon:hover,
+.button-icon:focus {
+    fill: var(--text-color-accent);
+}
+
+
+/*before pseudo-classes
 
 .site-contacts .item::before {
     display:inline-block;
@@ -170,7 +191,7 @@ h1,h2,h3,h4,h5,h6 {
     background-image: url(../images/icon-tel.svg);
     width: 10px;
     height: 16px;
-}
+}*/
 
 
 /*Section "Hero" styling*/
@@ -241,7 +262,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-right: auto;
 }
 .advantages-list {
-    display: flex;
+    display: flex; 
     justify-content: center;
 }
 
